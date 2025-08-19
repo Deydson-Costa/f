@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feira de Ciências - Mendigas feat. Evellyn</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background: linear-gradient(180deg, #D8BFD8 0%, #c5a3fc 50%, #E6E6FA 100%);
+      color: #2c2c54;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h2, h3 { color: #5D3FD3; }
+    section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    a.btn-topo, a.btn-link {
+      background-color: #8661C1;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 9999px;
+      font-weight: 600;
+      box-shadow: 0 4px 6px rgb(134 97 193 / 0.7);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+    a.btn-topo:hover, a.btn-link:hover { background-color: #5D3FD3; }
+    img.project-img {
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(102, 53, 204, 0.4);
+      margin-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      max-height: 240px;
+      object-fit: cover;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #8661C1;
+      color: white;
+      box-shadow: 0 5px 15px rgba(134, 97, 193, 0.7);
+      position: relative;
+    }
+    header img.logo {
+      max-width: 140px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #5D3FD3;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header id="topo">
+    <img src="logo.png" alt="Logo do Projeto" class="logo" />
+    <h1>Feira de Ciências - Mendigas feat. Evellyn</h1>
+    <p>EE Vinícius de Moraes • 2º Ano Informática</p>
+    <!-- LINK PARA OUTRAS PESSOAS ACESSAREM O SITE -->
+    <a href="https://C:/Users/SEEMG/Desktop/nicoly%202%20inf.html#topo" target="_blank" class="btn-link">Clique aqui para acessar o site</a>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-10">
+    <!-- APRESENTAÇÃO -->
+    <section class="mb-12">
+      <h2>Apresentação</h2>
+      <p>Criamos este site para apresentarmos como nossos projetos da feira de ciências e robótica foram feitos.</p>
+      <p>O grupo é composto por: Maria Izadora, Vitória, Nicoly, Isabella, Ludymila, Ariane e Evellyn.</p>
+      <p>Somos da Escola Estadual Vinícius de Moraes e estamos no 2° ano do Ensino Médio, cursando Informática.</p>
+    </section>
+
+    <!-- PROJETO: MOINHO DE ÁGUA -->
+    <section class="mb-12">
+      <h2>Projeto: Moinho de Água</h2>
+      <img src="moinho.jpg" alt="Foto do Moinho de Água" class="project-img" />
+      <ul class="list-disc list-inside">
+        <li>Tampinhas de plástico</li>
+        <li>Papelão</li>
+        <li>Palito de churrasco</li>
+        <li>Canudo</li>
+        <li>2 potes de plástico</li>
+        <li>Arame</li>
+        <li>Palito de picolé</li>
+        <li>Isopor</li>
+        <li>Tinta</li>
+        <li>Cola quente</li>
+      </ul>
+    </section>
+
+    <!-- PROJETOS DE ROBÓTICA -->
+    <section class="mb-12">
+      <h2>Projetos de Robótica</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article>
+          <h3>Robô Eve - Ariane e Nicoly</h3>
+          <img src="robo-eve.jpg" alt="Robô Eve" class="project-img" />
+          <ul class="list-disc list-inside">
+            <li>Motor DC com engrenagens</li>
+            <li>Bateria 9V</li>
+            <li>Papelão, palito de dente</li>
+            <li>Interruptor liga/desliga</li>
+            <li>Cola quente, tinta (opcional)</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Robô Pou - Ariane e Nicoly</h3>
+          <img src="robo-pou.jpg" alt="Robô Pou" class="project-img" />
+          <ul class="list-disc list-inside">
+            <li>Mesmo materiais do Robô Eve</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Roda Gigante - Evellyn</h3>
+          <img src="roda-gigante.jpg" alt="Roda Gigante" class="project-img" />
+          <ul class="list-disc list-inside">
+            <li>Papelão, E.V.A., glitter, tinta</li>
+            <li>Palito de picolé e de churrasco</li>
+            <li>Arame, elástico, motor DC</li>
+            <li>Pilhas, interruptor, caixa de pilha</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Carrossel - Evellyn</h3>
+          <img src="carrossel.jpg" alt="Carrossel" class="project-img" />
+          <ul class="list-disc list-inside">
+            <li>Papelão, motor, e.v.a., glitter</li>
+            <li>Bola de gude, palito de churrasco</li>
+            <li>Bateria, elástico, interruptor</li>
+            <li>Cola quente</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Aero Barco - Ludymila</h3>
+          <img src="aero-barco.jpg" alt="Aero Barco" class="project-img" />
+          <ul class="list-disc list-inside">
+            <li>Isopor, motor de DVD, cola quente</li>
+            <li>Cata vento, bateria 9V, suporte</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Carrinho 1 - Isabella</h3>
+          <img src="carrinho1.jpg" alt="Carrinho 1" class="project-img" />
+          <ul class="list-disc list-inside">
+            <li>Palito de picolé, canudo</li>
+            <li>Tampinha PET, elástico</li>
+            <li>Palito de churrasco, rodas plásticas</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Carrinho 2 - Isabella</h3>
+          <img src="carrinho2.jpg" alt="Carrinho 2" class="project-img" />
+          <ul class="list-disc list-inside">
+            <li>Lata de batata, motor de DVD</li>
+            <li>Palito de churrasco, canudo</li>
+            <li>Rodinhas plásticas, interruptor</li>
+            <li>Bateria 9V, adaptador, cata vento</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Robô - Maria Izadora e Vitória</h3>
+          <img src="robo-vm.jpg" alt="Robô" class="project-img" />
+          <ul class="list-disc list-inside">
+            <li>Motor de corrente contínua, papelão</li>
+            <li>Interruptor, bateria 9V</li>
+            <li>Fios, barrinha de metal, conector</li>
+            <li>Caneta vazia, elásticos, cola quente</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Teleférico - Maria Izadora e Vitória</h3>
+          <img src="teleferico.jpg" alt="Teleférico" class="project-img" />
+          <ul class="list-disc list-inside">
+            <li>Papelão, motor, bateria</li>
+            <li>Interruptor, elástico, cola quente</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Carnaval - Maria Izadora e Vitória</h3>
+          <img src="carnaval.jpg" alt="Carnaval" class="project-img" />
+          <ul class="list-disc list-inside">
+            <li>Papelão, motor, fios elétricos</li>
+            <li>Caixa de pilhas, 3 pilhas grandes</li>
+            <li>Linha, cola quente</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- AGRADECIMENTOS -->
+    <section class="bg-purple-100 rounded-xl shadow-md p-6 my-12 text-center">
+      <h2 class="text-2xl font-bold text-purple-700 mb-4">Agradecimentos</h2>
+      <p class="text-lg leading-relaxed">
+        Agradecemos imensamente às professoras <strong>Daiana</strong>, <strong>Carla</strong> e <strong>Wanilda</strong> por todo o apoio, incentivo e dedicação. <br />
+        Sem vocês, nada disso teria sido possível. <br />
+        Obrigada por acreditarem em nós e fazerem parte dessa jornada! 💜
+      </p>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="my-12">
+      <h2 class="text-2xl font-bold text-purple-700 mb-6 text-center">Depoimentos do Grupo</h2>
+      <div class="space-y-6">
+        <blockquote class="italic text-purple-800 bg-white p-4 rounded-lg shadow-md">"Foi incrível ver o projeto tomando forma! Me senti realizada em fazer parte disso." – <strong>Evellyn</strong></blockquote>
+        <blockquote class="italic text-purple-800 bg-white p-4 rounded-lg shadow-md">"Pura bagunça e mil trabalhos para fazer" – <strong>Vitória</strong></blockquote>
+        <blockquote class="italic text-purple-800 bg-white p-4 rounded-lg shadow-md">"Foi um estresse que só, nunca mais eu faço um teleférico em toda a minha vida" – <strong>Nicoly</strong></blockquote>
+        <blockquote class="italic text-purple-800 bg-white p-4 rounded-lg shadow-md">"Caos total e muito estresse" – <strong>Isabella</strong></blockquote>
+        <blockquote class="italic text-purple-800 bg-white p-4 rounded-lg shadow-md">"Foi muito divertido criar os carrinhos e aprender sobre motores." – <strong>Ludymila</strong></blockquote>
+        <blockquote class="italic text-purple-800 bg-white p-4 rounded-lg shadow-md">"Mesmo que tenha um prazo longo, é bem corrido e às vezes estressante, quando as coisas não saem como planejado (obs: ainda nem me estressei)" – <strong>Ariane</strong></blockquote>
+        <blockquote class="italic text-purple-800 bg-white p-4 rounded-lg shadow-md">"Tem que ter muita paciência viu, coisa que nosso grupo não tem" – <strong>Maria Izadora</strong></blockquote>
+      </div>
+    </section>
+
+    <!-- VOLTAR AO TOPO -->
+    <a href="#topo" class="btn-topo">Voltar ao Topo</a>
+  </main>
+
+  <footer>
+    <p>© 2025 Mendigas feat. Evellyn • Feira de Ciências</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    function checkSections() {
+      const triggerBottom = window.innerHeight * 0.9;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) section.classList.add('visible');
+      });
+    }
+    window.addEventListener('scroll', checkSections);
+    window.addEventListener('load', checkSections);
+  </script>
+</body>
+</html>
